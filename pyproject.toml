@@ -8,6 +8,10 @@ keywords = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
+jupyter = "^1.0.0"
+matplotlib = "^3.4.1"
+jupyterlab = "^3.0.14"
+ipympl = "^0.7.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.0"
