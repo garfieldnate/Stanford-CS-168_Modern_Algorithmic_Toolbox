@@ -143,3 +143,5 @@ dmypy.json
 .prof
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+
+materials/Week 2/p2_data/

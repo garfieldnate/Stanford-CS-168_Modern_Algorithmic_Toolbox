@@ -14,6 +14,7 @@ jupyterlab = "^3.0.14"
 ipympl = "^0.7.0"
 tqdm = "^4.60.0"
 blackcellmagic = "^0.0.2"
+pandas = "^1.2.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.0"
