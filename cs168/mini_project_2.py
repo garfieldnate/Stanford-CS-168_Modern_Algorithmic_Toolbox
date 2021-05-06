@@ -16,7 +16,7 @@ def load_data():
         DATA_DIR / "data50.csv",
         header=None,
         names=["article_id", "word_id", "count"],
-    ).pivot(index="article_id", columns="word_id")
+    ).pivot(index="article_id", columns="word_id")["count"]
     labels = pd.read_csv(DATA_DIR / "label.csv", header=None, squeeze=True)
 
     return group_names, data, labels
