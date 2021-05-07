@@ -7,7 +7,7 @@ keywords = [
     "Stanford", "CS 168", "algorithms", "class", "computer science"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9, <3.10" # 3.10 cap required by numpy
 jupyter = "^1.0.0"
 matplotlib = "^3.4.1"
 jupyterlab = "^3.0.14"
@@ -15,6 +15,7 @@ ipympl = "^0.7.0"
 tqdm = "^4.60.0"
 blackcellmagic = "^0.0.2"
 pandas = "^1.2.4"
+scipy = "^1.6.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.0"
