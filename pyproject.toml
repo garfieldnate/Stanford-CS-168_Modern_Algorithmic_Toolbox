@@ -16,6 +16,7 @@ tqdm = "^4.60.0"
 blackcellmagic = "^0.0.2"
 pandas = "^1.2.4"
 scipy = "^1.6.3"
+jupyter-bokeh = "^3.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.0"
