@@ -5,4 +5,6 @@
     - Particularly, make sure that you don't mix 1- and 0-indexed datasets. Check them when you read from csv; if you got a 0-indexed but need a 1-indexed data set, do `data.index += 1`.
 
 * Quickest way to get slanted labels for x-axis: `fig.autofmt_xdate()`
+* df[i] seems to get the i'th column, while df.loc[i] gets the i'th row
+* Bokeh figure x_range and y_range have to be a list of strings; for a dataframe, use `df.index = df.index.map(str)` to make it so.
 *
