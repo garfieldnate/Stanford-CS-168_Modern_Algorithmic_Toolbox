@@ -1,4 +1,10 @@
 
+## Jupyter
+
+### Bugs
+
+* Sometimes you have to have to add manual `<p>` markers to make a paragraph break with proper spacing in markdown sections.
+
 ## Pandas/Numpy
 
 * Indexes for `data` and `series` have to be the same for you to do something like data[ series[series == blah]]. Check `data.index` and `foo.index` before assuming this will work. Would be really nice if we could capture this requirement in type signatures!
