@@ -13,3 +13,8 @@
 
 * Markdown cells with assignment div classes not formatted correctly on HTML output (okay in Jupyter lab view)
 * Missing initial `<p>` in markdown cells, leading to first paragraph not breaking.
+* Markdown renders HTML comments!!! <!--
+
+--> is put in the output. That is awful!
+* $...$ then newline becomes new paragraph in output, regardless of whether there are 2 newlines!
+*
