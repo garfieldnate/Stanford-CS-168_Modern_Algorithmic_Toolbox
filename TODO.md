@@ -24,4 +24,5 @@
 ## Wish List
 
 * Magic functionality for markdown cells. I want the magics to be hidden in the output; I want this so that I can style cells with a some `%%mystyle% instead of surrounding each cell with a div, a style, and the required intervening newlines. This would probably have to written in JavaScript, like the rest of the markdown stuff.
+* No clean way to add footnotes currently. https://github.com/jupyter/notebook/issues/1287#issuecomment-504491328
 
