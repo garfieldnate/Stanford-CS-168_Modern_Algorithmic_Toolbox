@@ -20,7 +20,7 @@ def load_co_occurence_data():
 
 
 def load_analogy_data() -> List[Tuple]:
-    """Returns list of 4-tuples of words: a is to b as c is to d"""
+    """Returns list of DataFrame with columns a, b, c and d: a is to b as c is to d"""
     analogies = []
     with open(
         Path(__file__).parents[1] / "materials" / "Week 5" / "analogy_task.txt"
@@ -29,6 +29,6 @@ def load_analogy_data() -> List[Tuple]:
             line = line.strip()
             words = line.split()
             assert len(words) == 4
-            analogies.append(tuple(words))
+            analogies.append(list(words))
 
-    return analogies
+    return pd.DataFrame(analogies, columns=["a", "b", "c", "d"])
