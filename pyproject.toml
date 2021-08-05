@@ -18,6 +18,7 @@ pandas = "^1.2.4"
 scipy = "^1.6.3"
 jupyter-bokeh = "^3.0.0"
 scikit-learn = "^0.24.2"
+Pillow = "^8.3.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.0"

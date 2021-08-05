@@ -2,11 +2,16 @@ import zipfile
 from pathlib import Path
 from typing import List, Tuple
 
+import numpy as np
 import pandas as pd
+from PIL import Image
 
-ZIP_FILE = Path(__file__).parents[1] / "materials" / "Week 5" / "co_occur.csv.zip"
+MATERIALS = Path(__file__).parents[1] / "materials" / "Week 5"
+
+ZIP_FILE = MATERIALS / "co_occur.csv.zip"
 DATA_DIR = ZIP_FILE.with_suffix("")
-DIC_FILE = Path(__file__).parents[1] / "materials" / "Week 5" / "dictionary.txt"
+DIC_FILE = MATERIALS / "dictionary.txt"
+ALICE_FILE = MATERIALS / "p5_image.gif"
 
 
 def load_co_occurence_data():
@@ -32,3 +37,13 @@ def load_analogy_data() -> List[Tuple]:
             analogies.append(list(words))
 
     return pd.DataFrame(analogies, columns=["a", "b", "c", "d"])
+
+
+def load_alice() -> np.matrix:
+    """Load the example "Alice" picture as a numpy matrix.
+    Code taken from https://www.frankcleary.com/svdimage/"""
+    image = Image.open(ALICE_FILE)
+    image_np = np.array(list(image.getdata(band=0)), float)
+    image_np.shape = (image.size[1], image.size[0])
+    image_np = np.matrix(image_np)
+    return image_np
