@@ -345,6 +345,17 @@ unicode = ["unicodedata2 (>=14.0.0)"]
 woff = ["zopfli (>=0.1.4)", "brotlicffi (>=0.8.0)", "brotli (>=1.0.1)"]
 
 [[package]]
+name = "gudhi"
+version = "3.5.0"
+description = "The Gudhi library is an open source library for Computational Topology and Topological Data Analysis (TDA)."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = ">=1.15.0"
+
+[[package]]
 name = "identify"
 version = "2.4.11"
 description = "File identification library for Python"
@@ -1578,7 +1589,7 @@ notebook = ">=4.4.1"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9, <3.10" # 3.10 cap required by numpy
-content-hash = "488b14fa3a41dca433b510fa05285d8a0921cf8524233dc53c19ccf81634c5ba"
+content-hash = "a2b2736c12a9cc64e70e2872a95a508acb5fc3f8fce189439443f8e6d5b66ab0"
 
 [metadata.files]
 anyio = [
@@ -1824,6 +1835,22 @@ flake8 = [
 fonttools = [
     {file = "fonttools-4.29.1-py3-none-any.whl", hash = "sha256:1933415e0fbdf068815cb1baaa1f159e17830215f7e8624e5731122761627557"},
     {file = "fonttools-4.29.1.zip", hash = "sha256:2b18a172120e32128a80efee04cff487d5d140fe7d817deb648b2eee023a40e4"},
+]
+gudhi = [
+    {file = "gudhi-3.5.0-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:167d8499ef255b9d0c62577b66a0946ee8ce58105a24f88f26cda837c3898705"},
+    {file = "gudhi-3.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b95e4e1e6a251594ac553894276aece8579214cea8a99eb94645acbc7ec2bd81"},
+    {file = "gudhi-3.5.0-cp310-cp310-win_amd64.whl", hash = "sha256:fcae32e6d985c260fc551a37409d3d45c83f1bf53b9549345ff41b211fc42bff"},
+    {file = "gudhi-3.5.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d3aa984edfcaf42f3a546d2c1b9420fdcc1c0d425bc6c35d4f47858b7df2d0ff"},
+    {file = "gudhi-3.5.0-cp36-cp36m-win_amd64.whl", hash = "sha256:d63282ab58b828a008dc51e5bf3205a7efde11898961cd57ef7e377ea1219a50"},
+    {file = "gudhi-3.5.0-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:2dc8b4f21b9d0138818fc6c894fba2e75f0cac7cc8189622ae641fd15f3adda2"},
+    {file = "gudhi-3.5.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6c2ce51bfe78ba5e20fc4ce1e3ea7eee1116e72625f0cd30bfd6f3ad4871d9bf"},
+    {file = "gudhi-3.5.0-cp37-cp37m-win_amd64.whl", hash = "sha256:d0a9cae04881307e5ac0fca13d3c9d14668c88fb3352de61add20953d611fa07"},
+    {file = "gudhi-3.5.0-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:cc322e4fa80c12497cb17237c46cc51256f88c89dd7d68fe6000be7fd3da5087"},
+    {file = "gudhi-3.5.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c787df05bf8907e26e9ab0537040bf5b0320da228842f967d0121d990e78eae6"},
+    {file = "gudhi-3.5.0-cp38-cp38-win_amd64.whl", hash = "sha256:868f7d45950546a2940dc202d1f6beda98dd3cc369a86ab4a2b6f1ac881c7690"},
+    {file = "gudhi-3.5.0-cp39-cp39-macosx_10_14_x86_64.whl", hash = "sha256:c0a79b1efc8390d58280b214789ef59372bdf3e982c7a530078670fb90478695"},
+    {file = "gudhi-3.5.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e61c44c96fd825e6837077653f0c7f3785ad1cc503ef52b5040fa19f4feabf37"},
+    {file = "gudhi-3.5.0-cp39-cp39-win_amd64.whl", hash = "sha256:e600b71e6ebb9065575e7fdc08f82722f9029c6956afe732a9d8f3fd5c552200"},
 ]
 identify = [
     {file = "identify-2.4.11-py2.py3-none-any.whl", hash = "sha256:fd906823ed1db23c7a48f9b176a1d71cb8abede1e21ebe614bac7bdd688d9213"},
