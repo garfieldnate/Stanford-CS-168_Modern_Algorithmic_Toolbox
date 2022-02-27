@@ -93,7 +93,7 @@ class UnionFind:
             self.parent_pointers[on2] = on1
 
 
-# Implements the ToMaTo clustering algorithm (https://geometrica.saclay.inria.fr/team/Steve.Oudot/papers/cgos-pbc-09/cgos-pbcrm-11.pdfhttps://geometrica.saclay.inria.fr/team/Steve.Oudot/papers/cgos-pbc-09/cgos-pbcrm-11.pdf)
+# Implements the ToMaTo clustering algorithm (https://geometrica.saclay.inria.fr/team/Steve.Oudot/papers/cgos-pbc-09/cgos-pbcrm-11.pdf)
 
 
 class ToMaTo:
@@ -153,7 +153,7 @@ class ToMaTo:
             plt.figure(figsize=(18, 4))
             fig = gds.GridSpec(1, 2)
             plt.subplot(fig[0, 0])
-            print(f"plotting persistance diagram of {res}")
+            # TODO: broken for some reason
             gudhi.plot_persistence_diagram(res)
             plt.subplot(fig[0, 1])
             gudhi.plot_persistence_barcode(res)
