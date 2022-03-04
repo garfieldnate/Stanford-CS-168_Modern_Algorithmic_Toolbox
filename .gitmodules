@@ -1,0 +1,3 @@
+[submodule "materials"]
+	path = materials
+	url = git@github.com:garfieldnate/Materials_Stanford-CS-168_Modern_Algorithmic_Toolbox.git

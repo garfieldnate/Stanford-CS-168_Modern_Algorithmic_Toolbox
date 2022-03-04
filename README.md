@@ -1,6 +1,6 @@
 # Stanford CS 168: Modern Algorithmic Toolbox
 
-Class assignments for http://web.stanford.edu/class/cs168/index.html
+My class assignments for http://web.stanford.edu/class/cs168/index.html. The notebooks sometimes refer to data stored in the materials/ submodule, but the materials repo cannot be made public due to copyright (if you email me I can give you personal access). The materials are all still available on the internet in other locations.
 
 ## Goals
 
