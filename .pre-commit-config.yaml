@@ -26,14 +26,5 @@ repos:
         name: mypy
         stages: [commit]
         language: system
-        entry: poetry run mypy
+        entry: poetry run mypy -v
         types: [python]
-
-      - id: pytest
-        name: pytest
-        stages: [commit]
-        language: system
-        entry: poetry run pytest --cov
-        types: [python]
-        always_run: true
-        pass_filenames: false

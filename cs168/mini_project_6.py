@@ -5,7 +5,6 @@ import matplotlib.gridspec as gds
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 from scipy.stats import gaussian_kde
 from sklearn.decomposition import PCA
 from sklearn.neighbors import KDTree
